@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <org.tomweatherhead.mandelbrot.MandelbrotView
+      android:id="@+id/mandelbrot"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+   	  android:layout_marginTop="10dip"
+      android:layout_centerHorizontal="true" />
+    
+    <TextView
+      android:id="@+id/text"
+	  android:text="@string/app_name"
+	  android:visibility="visible"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:layout_below="@id/mandelbrot"
+      android:gravity="center_horizontal"
+      android:textColor="#88ffffff"
+      android:textSize="18sp" />
+    
+	<RelativeLayout
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/text"
+    	android:layout_centerHorizontal="true">
+    	
+    	<Button
+        	android:id="@+id/home"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginRight="10dip"
+        	android:text="@string/home" />
+    	
+    	<Button
+        	android:id="@+id/zoom_out"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_toRightOf="@id/home"
+        	android:layout_alignTop="@id/home"
+        	android:text="@string/zoom_out" />
+	</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="hello">Hello World, MandelbrotActivity!</string>
+    <string name="app_name">Mandelbrot</string>
+    
+    <string name="menu_home">Home</string>
+    <string name="menu_zoom_out">Zoom Out</string>
+    <string name="menu_pause">Pause</string>
+    <string name="menu_resume">Resume</string>
+
+    <string name="message_epsilon">The floating-point precision limit has been reached</string>
+    <string name="message_paused">Paused</string>
+    <string name="message_zoom">Zoom factor: 2 to the power of</string>
+
+    <string name="home">Home</string>
+    <string name="zoom_out">Zoom Out</string>
+</resources>
